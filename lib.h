@@ -1,17 +1,6 @@
-#include "lib.h"
-#include <cmath>
-#include<limits>
+#ifndef UNTITLED17_LIB_H
+#define UNTITLED17_LIB_H
 
-float max(int a, float numeri[]){
-  float m = -INFINITY;
-  
-  for(int i = 0; i < a; i++){
-    
-    if(numeri[i] > m){
-      m = numeri[i];
-    }
-    
-  }
-  
-  return m;
-}
+bool ricerca(char lista [10][20], char nome [1][20], int &pos);
+
+#endif //UNTITLED17_LIB_H
