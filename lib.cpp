@@ -1,14 +1,14 @@
 #include "lib.h"
+#include <cstring>
 
-int cerca(char a1[10][20], char a2[20]){
+
+bool ricerca(char lista [10][20], char nome[1][20], int &pos){
+  
   for(int i = 0; i < 10; i++){
-    bool flag = true;
-    
-    for(int j = 0; j < 20; j++){
-      if(a1[i][j]!=a2[j]) flag = false;
-    }
-    
-    if(flag) return i;
+      if (strcmp (lista [i], nome [0]) == 0){
+        pos = i;
+        return true;
+      }
   }
-  return -1;
+  return false;
 }
